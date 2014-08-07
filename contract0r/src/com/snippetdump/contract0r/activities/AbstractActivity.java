@@ -1,12 +1,14 @@
-package com.snippetdump.contract0r.controller;
+package com.snippetdump.contract0r.activities;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class Controller {
-	
+import android.app.Activity;
+
+public class AbstractActivity extends Activity{
+
 	/** The Constant logger. */
-	private static final Logger logger = LoggerFactory.getLogger(Controller.class);
+	private static final Logger logger = LoggerFactory.getLogger(AbstractActivity.class);
 	
 	/**
 	 * Log.
@@ -16,4 +18,5 @@ public class Controller {
 	public void log(String message) {
 		logger.info(message);
 	}
+	
 }
